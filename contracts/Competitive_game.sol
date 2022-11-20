@@ -18,7 +18,7 @@ function startGame(uint _gameId)  public payable nonReentrant {
         //Game start if the user is the first user in the game or if user is the second one, he's address should'nt be equal to first user address
         require((gameUserCount[_gameId] == 0)  || (gameToUser[_gameId][0] != msg.sender));
         
-        // if(gameUserCount[_gameId]==0){
+        // these codes were replaced by line 27 for Abbreviation: if(gameUserCount[_gameId]==0){
         //     gameStatus[_gameId]=1
         //     }
         // else if(gameUserCount[_gameId]==1){
